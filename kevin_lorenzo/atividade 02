@@ -127,3 +127,25 @@ d)c
 e)c
 f)c
 
+Questão 07) Uma empresa de porte médio tem a matriz na Bahia e mais cinco filiais em outras
+cidades do Brasil. Agora imagine que em nenhuma das localidades a rede tem mais do que 30
+computadores. O endereço fornecido 10.100.100.0/24, para evitar desperdício de endereços e com
+as informações acima, identifique os seguintes itens:
+sub: bahia + 5 subredes
+host: 30hosts
+hosts = é a quantidade de zeros
+2^n - 2 >=30
+n = 5
+nova mascara: /27
+a) Quantidade de subredes ?
+r: 6
+b) Quantidade de hosts ?
+r: 30
+c) Endereço de cada subrede ?
+r: 2^n = 8 		var: 256 - 224 = 32
+d) Endereço da primeira máquina de cada subrede ?
+r: .1/.33/ .65/ . 97/ .129/ .161
+e) Endereço da última máquina de cada subrede ?
+r: .30/ .62/ .94/ .126/.158/.190
+f) Endereço de broadcast de cada subrede?
+r: .31/ .63/ .95/ .127/ .159/ .191
