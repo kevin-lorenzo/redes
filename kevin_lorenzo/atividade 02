@@ -149,3 +149,45 @@ e) Endereço da última máquina de cada subrede ?
 r: .30/ .62/ .94/ .126/.158/.190
 f) Endereço de broadcast de cada subrede?
 r: .31/ .63/ .95/ .127/ .159/ .191
+
+
+Questão 08) Seja o endereço IP de um host de uma determinada rede 172.18.70.23 com máscara
+255.255.192.0, qual é o IP de base de rede e de broadcast pertencente a subrede deste host?
+128	64	32	16	8	4	2	1
+255.255.192.0 -> 11111111.11111111.11000000.00000000
+172.18.70.23
+8  + 8 + 2 = /18
+var: 256 - 192 = 64
+rede: 172.18.64.0 (todos os de rede finais sao 0)
+broad: 172.18.127.255
+0 - 64 - 128 
+Questão 09) O gateway de sua rede tem o endereço 200.170.150.97 com máscara 255.255.255.224.
+Determine a rede, o broadcast e quais IPs válidos você dispõe para endereçar os hosts de sua rede.
+ip: 170.150.97/27
+mascara: 255.255.255.224(transforma em binario)
+
+255.255.255.224 ->11111111.11111111.11111111.11100000
+			8	+	8	+8	+3 = /27
+var: 256 - 224= 32
+0 	- 32	-64
+rede: 200.170.150.96
+broad: 200.170.150.127
+host: 200.170.150.97 -> 200.170.150.127
+Questão 10) Dado o IP 11.11.11.11 com a máscara /22 (que é 11+11) escolha dentre as alternativas
+abaixo quais são IPs válidos pertencentes à mesma subrede (escolha duas alternativas):
+a. 11.11.11.0
+b. 11.11.10.255
+c. 11.11.7.1
+d. 11.12.0.1
+e. 11.11.11.255
+
+11.11.11.11/22 = 255.255.252.0
+var: 256-252: 4
+rede: 11.11.8.0
+broad: 11.11.11.255(5)
+0 	-	4	-	8	-	12	-	16
+
+11.11.11.0
+11.11.10.255
+
+			
