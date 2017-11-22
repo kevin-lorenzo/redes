@@ -33,6 +33,7 @@ variação:
 256 - 224 = 32
 212.1.1.0
 212.1.1.32 - 64 - 96 - 128 - 160 - 192 - 224
+
 Questão 04) Para cada alínea verifique se os endereços IP estão ou não na mesma subrede:
 a) Endereço IP1: 192.168.1.116/26
 Endereço IP2: 192.168.1.124 /26
